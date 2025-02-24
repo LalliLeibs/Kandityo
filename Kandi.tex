@@ -1,54 +1,84 @@
-\documentclass[utf8,bachelor] {gradu3}
+\documentclass[utf8,bachelor]{gradu3}
+% Jos työ on kandidaatintutkielma eikä pro gradu, käytä ylläolevan asemesta
+%\documentclass[utf8,bachelor]{gradu3}
+% Jos kirjoitat englanniksi, käytä ylläolevan asemesta
+%\documentclass[utf8,english]{gradu3}
+% tai
+%\documentclass[utf8,bachelor,english]{gradu3}
 
+\usepackage{graphicx} % kuvien mukaan ottamista varten
+
+\usepackage{amsmath} % hyödyllinen jos tekstisi sisältää matikkaa,
+                     % ei pakollinen
+
+\usepackage{booktabs} % hyvä kauniiden taulukoiden tekemiseen
+
+% HUOM! Tämän tulee olla viimeinen \usepackage koko dokumentissa!
 \usepackage[bookmarksopen,bookmarksnumbered,linktocpage]{hyperref}
 
 \addbibresource{kandi.bib} % Lähdetietokannan tiedostonimi
 
 \begin{document}
 
-\title{Otsikko}
-\translatedtitle{Header}
-\studyline{Koulutusteknologia}
-\avainsanat{Avainsanat}
-\keywords{Keywords}
-\tiivistelma{%
-Tiivistelmä
-}
-\abstract{%
-Abstract
-}
-
+\title{Videopelien vaikutus peruskoululaisten kognitiivisiin taitoihin}
 \author{Lauri Ahonen}
 \contactinformation{\texttt{lauri.t.ahonen@student.jyu.fi}}
 % jos useita tekijöitä, anna useampi \author-komento
-\supervisor{Ohjaamaton työ}
+%\supervisor{Ohjaamaton työ}
 % jos useita ohjaajia, anna useampi \supervisor-komento
+
+\subject{Kandidaatintutkielman}
+%\type{tutkimussuunnitelma}
 
 \maketitle
 
 \mainmatter
 
 \chapter{Johdanto}
+Videopelaaminen on nykyajan nuorten keskuudessa suosittu vapaa-ajan harrastus. Vuoden 2022 pelaajabarometrin mukaan 10-19-vuotiaista nuorista 76\% pelaa digitaalisia pelejä viikoittain. \parencite{kinnunen2022pelaajabarometri} Kyseessä on siis laaja ilmiö, joka koskettaa suurinta osaa nuorista päivittäin. Laajan yleisön lisäksi videopelit ovat 2000-luvun aikana saavuttaneet ison roolin osana populaarikulttuuria ja ovatkin monen nuoren elämässä iso osa heidän identiteettiään. Teknologian kehityksen johdosta videopelaaminen on mahdollista lähes jokaiselle nuorelle, ja älypuhelimen omistajana pelit kulkevat aina käyttäjänsä mukana.  
 
-Tutkielman varsinainen teksti alkaa aina luvulla ''Johdanto''.  Sen
-kirjoittamisen voi hyvin jättää aivan tutkielman kirjoitusprosessin
-loppuvaiheisiin.
+Peruskouluaika on nuoren elämässä pitkä ja merkityksellinen elämänvaihe. ''Perusopetuksen tavoitteena on tukea oppilaiden kasvua ihmisinä ja yhteiskunnan jäseninä sekä opettaa tarpeellisia tietoja ja taitoja''.\parencite{OPH2025} Vaikka nykyaikana koulutusjärjestelmä onkin pyrkinyt muuttumaan akateemisesta oppimisesta laajemman ja moniulotteisemman osaamisen opetukseen, on perinteisten taitojen kuten lukemisen, laskemisen ja oppimisen taitojen opiskelu yhä koulutuksen keskiössä. Tämän oppimisen keskiössä on kognitiiviset taidot, jotka mahdollistavat tiedon syvällisen omaksumisen ja kriittisen ajattelun kehittymisen. 
 
-\chapter{Tutkielman rakenne}
+Peruskouluikäiset lapset ovat kognitiivisen kehityksen kannalta kriittisessä elämänvaiheessa. Kognitio on moniulotteinen kokonaisuus, mutta tässä työssä käytän kognitiiviselle toiminnalle seuraavaa määritelmää: “Laajasti ymmärrettynä tiedonkäsittelyyn liittyvät toiminnot kuten havaitseminen, oppiminen, tarkkaivaisuus, muisti, päättely, sosiaalinen kognitio, kieli ja tietoisuus”. \parencite{hamalainen2006mieli} Nämä prosessit eivät kehity tyhjiössä, vaan vuorovaikutuksessa sisäisten sekä ulkoisten vaikutteiden johdosta. 
 
-Yhteensä tutkielmassa on hyvä olla 5--9 numeroitua
-lukua, siis Johdanto ja Yhteenveto mukaan lukien.  Tarvittaessa voit
-käyttää alilukuja tarkempaan jäsentelyyn.\parencite{mustafa2023psychological}
+Tämän työn tarkoituksena on perehtyä siihen, kuinka videopelaaminen vaikuttaa peruskouluikäisten nuorten kognitiivisiin taitoihin. Tarkoituksena on kirjallisuuskatsauksen keinoin perehtyä aiheesta tehtyihin tutkimuksiin sekä tutkimuskirjallisuuteen ja muodostaa yleismaailmallinen käsitys aineistojen löydöksistä. Tässä työssä keskitytään oppimisen kannalta tärkeisiin kognition osa-alueisiin. Tutkimuskysymykset ovat seuraavat: 
+\newpage
+\begin{enumerate}
+\item Kuinka säännöllinen videopelaaminen vaikuttaa peruskouluikäisten kognitiivisiin taitoihin? 
+\item Miten videopelaamisen määrä tai pelin sisältö vaikuttaa kognitiivisiin taitoihin? 
+\end{enumerate}
+
+Lähdemateriaalina toimivat pääasiassa tutkimukset videopelien vaikutuksista kognition eri osa-alueisiin. Materiaalista on rajattu pois tutkimukset, joiden osallistujien ikä ei vastaa suomalaisen peruskoulujärjestelmän ikävuosia 7–16. Tämän lisäksi tutkimuksen päätarkoituksena on pitänyt olla videopelaamisen vaikutusten tarkastelu tiettyyn tai useampaan kognition osa-alueeseen. Kognition teoriakehyksen osalta lähteenä toimivat kehityspsykologiaa käsittelevät tieteelliset artikkelit sekä painetut kirjalliset lähteet.  Keskeisimpänä lähteiden etsinnän tietokantana on toiminut Google Scholar hakukone.  
+
+\chapter{Videopelit ja peruskoululaiset}
+
+\section{Videopelit}
+- Mikä on videopeli
+- Miten ne ovat kehittyneet ja millaisia nykypäivänä
+-Miten mielletään mediassa ja populaarikulttuurissa
+
+\section{Videopelaaminen peruskoulaisten keskuudessa}
+-Kuinka iso ilmiö
+-Mitkä pelit suosittuja
+- Tytöt vs Pojat
+
+\chapter{Kognitiiviset taidot}
+- Mitä ne ovat
+- Miten kehittyvät
+-Miksi erityisen tärkeitä koululaisille
+
+\chapter{Videopelaamisen vaikutukset kognitiivisiin taitoihin}
+
+\section{Hyödyt}
+- Mitä mahdollisia hyötyjä
+-Voiko pelaamista siis optiomoida näiden saamiseksi
+
+\section{Haitat}
+- Mitä haittoja
+-Miten vältetään tai vähennetään
 
 \chapter{Yhteenveto}
-Tutkielman viimeinen luku on Yhteenveto.  Sen on hyvä olla lyhyt;
-siinä todetaan, mitä tutkielmassa esitetyn nojalla voidaan sanoa
-johdannon väitteen totuudesta tai tutkimuskysymyksen vastauksesta
-Yhteenvedossa tuodaan myös esille tutkielman heikkoudet (erityisesti
-tekijät, jotka heikentävät tutkielman tulosten luotettavuutta), ellei
-niitä ole jo aiemmin tuotu esiin esimerkiksi Pohdinta-luvussa.  Tässä
-luvussa voidaan myös tuoda esille, mitä tutkimusta olisi tämän
-tutkielman tulosten valossa syytä tehdä seuraavaksi.\parencite{ozccetin2019relationships}
 
 \printbibliography
+
 \end{document}
